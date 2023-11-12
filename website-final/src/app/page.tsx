@@ -4,7 +4,10 @@ import { useRouter } from "next/navigation";
 
 export default function Home() {
   const router = useRouter();
-  router.push('/auth')
+  if (typeof (window) == 'object') {
+    router.push('/auth')
+  }
+
   return (
     <main>
 

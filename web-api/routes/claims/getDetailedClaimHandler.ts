@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
 import { getSession } from '../../utils/getSession';
-import { Agent, Claim } from '../../db/entities';
+import { Agent, Claim, ClaimHandler } from '../../db/entities';
 
-export default async function getDetailedAgent(req: Request, res: Response) {
+export default async function getDetailedClaimedHander(req: Request, res: Response) {
     const user = await getSession(req);
     if (!user) {
         return res.status(401).json({
@@ -11,7 +11,7 @@ export default async function getDetailedAgent(req: Request, res: Response) {
         })
     }
 
-    const agent = await Agent.findOne({
+    const agent = await ClaimHandler.findOne({
         where: {
             id: parseInt(req.params.agentId)
         }
@@ -27,7 +27,7 @@ export default async function getDetailedAgent(req: Request, res: Response) {
 
     const claims = await Claim.find({
         where: {
-            agent_assigned_id: agent?.id
+            claim_handler_assigned_id: agent?.id
         }
     })
 

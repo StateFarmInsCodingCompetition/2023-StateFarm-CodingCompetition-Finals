@@ -35,6 +35,7 @@ export default function Home() {
           {claims?.map((disaster: any) => {
             const agent = agents?.find(agent => agent.id?.toString() == disaster?.agent_assigned_id?.toString());
             const claimHandler = claimHandlers?.find(handler => handler.id?.toString() == disaster?.claim_handler_assigned_id?.toString());
+
             return (
               <tr key={disaster._id}>
                 <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">

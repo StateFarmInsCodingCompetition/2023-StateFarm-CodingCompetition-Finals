@@ -2,19 +2,17 @@
 
 ## Team Name: <>
 
-* Team Member(s): <>, <>
+* Team Member(s): Ian Zhang, Guhan Sivakumar
 
 ## List of Required Software
 
-> Examples: `NodeJS version X` or `Java version Y`
-
-<>, <>, <>
+NodeJS version 18.18.2, Python Version 3.11
 
 ## Document and describe any enhancements included to help the judges properly grade your submission.
 	
 ### Step 1:
 
-<>
+Implemented a CRM system with basic create and retrieve functions. We were not able to implement the delete and update funcitons. The CRM system allows the users to export the data in their desired format.
 
 ### Step 2: 
 

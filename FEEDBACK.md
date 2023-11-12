@@ -12,7 +12,7 @@ NodeJS version 18.18.2, Python Version 3.11
 	
 ### Step 1:
 
-Implemented a CRM system with basic create and retrieve functions. We were not able to implement the delete and update funcitons. The CRM system allows the users to export the data in their desired format.
+Implemented a CRM system with basic create and retrieve functions. The CRM system allows the users to export the data in their desired format.
 
 ### Step 2: 
 

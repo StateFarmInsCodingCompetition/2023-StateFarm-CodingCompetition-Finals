@@ -1,5 +1,6 @@
 'use client';
 import { apiFetchJson } from "@/utils/apiFetch";
+import Link from "next/link";
 import useSWR from "swr"
 
 export default function Home() {
@@ -40,7 +41,7 @@ export default function Home() {
             return (
               <tr key={disaster._id}>
                 <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">
-                  {disaster?.disaster_id} {disaster?.type}
+                  <Link href={`/dashboard/disasters/${disaster?.disaster_id}`} className="text-blue-700 hover:text-blue-500">Disaster: {disaster?.disaster_id}</Link> {disaster?.type}
                 </td>
                 <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{agent?.first_name} {agent?.last_name}</td>
                 <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{claimHandler?.first_name} {claimHandler?.last_name}</td>

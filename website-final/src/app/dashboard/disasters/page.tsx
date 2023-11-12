@@ -1,11 +1,12 @@
 'use client';
 import { apiFetchJson } from "@/utils/apiFetch";
+import { useRouter } from "next/navigation";
+import { useReducer } from "react";
 import useSWR from "swr"
 
 export default function Home() {
+  const router = useRouter();
   const { data: agents } = useSWR(`/disasters`, { fetcher: apiFetchJson })
-
-  console.log(agents)
 
   return (
     <main>
@@ -31,8 +32,10 @@ export default function Home() {
           </tr>
         </thead>
         <tbody className="divide-y divide-gray-200">
-          {agents?.map((disaster: any) => (
-            <tr key={disaster._id}>
+          {agents?.map((disaster: any, i: number) => (
+            <tr key={disaster._id} className={`${i % 2 == 0 ? 'bg-blue-100' : ''} hover:bg-red-100`} onClick={() => {
+              router.push(`/dashboard/disasters/${disaster.id}`)
+            }}>
               <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">
                 {disaster?.name}
               </td>

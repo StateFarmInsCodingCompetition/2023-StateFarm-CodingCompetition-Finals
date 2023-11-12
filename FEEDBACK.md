@@ -32,9 +32,7 @@ Import your data using MongoDB compass into the respective databases using the J
 
 > If there's any known problems with running your app, please list them below.
 
-1. <>
-2. <>
-3. <>
+1. No known bugs.
 
 ## Feedback for the coding competition?
 

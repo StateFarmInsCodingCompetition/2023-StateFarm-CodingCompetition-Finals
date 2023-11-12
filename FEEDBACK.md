@@ -2,13 +2,14 @@
 
 ## Team Name: <>
 
-* Team Member(s): <>, <>
+* Team Member(s): <Kyungchan Im>, <Gabriel Aracena>
 
 ## List of Required Software
 
 > Examples: `NodeJS version X` or `Java version Y`
 
 <>, <>, <>
+<Python 3.11>, <pipenv>, <>
 
 ## Document and describe any enhancements included to help the judges properly grade your submission.
 	
@@ -27,13 +28,12 @@
 > List any commands to run your project. For example:
 
 ```sh
-# To get most NodeJS apps to run locally
-npm install
+# Go to the terminal and locate to the directory,
+path/to/your/directory
 
-npm start
-# OR
-npm run dev
-```
+pipenv shell
+pipenv install # will install all packages needed
+
 
 ## Known Issues or Bugs
 

@@ -107,3 +107,13 @@ E-mail [codingcompetition@statefarm.com](mailto:codingcompetition@statefarm.com)
 ## Feedback
 
 At the end of Round 2, we need you to fill out [FEEDBACK.md](./FEEDBACK.md). It includes a few questions such as team name, any notable characteristics, bugs, etc. 
+
+## Branches by Team
+
+| Team Name   | Members                                     | Branch Name  | Round 1 PR                                                                                         |
+| ----------- | ------------------------------------------- | ------------ | -------------------------------------------------------------------------------------------------- |
+| Team Walden | Matthew Walden                              | mwalden2004  | [PR-15](https://github.com/StateFarmInsCodingCompetition/2023-StateFarm-CodingCompetition/pull/15) |
+| IG          | Guhan Sivakumar, Ian Zhang                  | gs1803       | [PR-40](https://github.com/StateFarmInsCodingCompetition/2023-StateFarm-CodingCompetition/pull/40) |
+| Glo Gang    | Yash Sarkar                                 | yash-sf-2023 | [PR-18](https://github.com/StateFarmInsCodingCompetition/2023-StateFarm-CodingCompetition/pull/18) |
+| GCU_CS      | Kyungchan Im, Gabriel Teixeira Lima Aracena | ChristheIm   | [PR-39](https://github.com/StateFarmInsCodingCompetition/2023-StateFarm-CodingCompetition/pull/39) |
+                

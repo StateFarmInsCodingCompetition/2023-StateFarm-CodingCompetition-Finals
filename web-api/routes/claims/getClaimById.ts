@@ -21,7 +21,7 @@ export default async function getClaimById(req: Request, res: Response) {
         return res.status(404).json({
             success: false,
             reason: 'CLaim not found',
-            aid: req.params.agentId || ''
+            aid: req.params.claimId || ''
         })
     }
 

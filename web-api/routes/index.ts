@@ -7,7 +7,7 @@ import getClaimById from "./claims/getClaimById";
 import getClaimHandlers from "./claims/getClaimHandlers";
 import getClaims from "./claims/getClaims";
 import getDetailedClaimedHander from "./claims/getDetailedClaimHandler";
-import getDisasterById from "./disasters/getClaimById";
+import getDisasterById from "./disasters/getDisasterById";
 import getDisasters from "./disasters/getDisasters";
 
 export default function apiRouteRegister() {
@@ -25,7 +25,7 @@ export default function apiRouteRegister() {
 
     //Claims
     api.get('/claims', getClaims);
-    api.get('/claims/id/:id', getClaimById);
+    api.get('/claims/id/:claimId', getClaimById);
 
     //Claim Handlers
     api.get('/claims/handlers', getClaimHandlers);

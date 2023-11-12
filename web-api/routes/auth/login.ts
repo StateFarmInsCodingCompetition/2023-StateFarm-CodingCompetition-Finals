@@ -20,14 +20,14 @@ export default async function login(req: Request, res: Response) {
     if (!foundUser) {
         return res.status(400).json({
             success: false,
-            reason: 'Bad request'
+            reason: 'Check your credentials then try again.'
         })
     }
 
     if ((await argon2.verify(foundUser.password, password)) == false) {
         return res.status(400).json({
             success: false,
-            reason: 'Bad request'
+            reason: 'Check your credentials then try again.'
         })
     }
 

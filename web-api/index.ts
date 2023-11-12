@@ -1,15 +1,18 @@
 import "reflect-metadata"
 import { dataSource } from "./db/mongo";
 import * as express from 'express';
-import cors from 'cors';
 import { Config } from "./config";
 import apiRouteRegister from "./routes";
 import { User } from "./db/entities";
 export const api = express();
 import * as argon2 from "argon2";
+import * as cors from 'cors';
 
 async function main() {
     await dataSource.initialize();
+
+    api.use(cors());
+    api.use(express.json());
 
     apiRouteRegister();
 

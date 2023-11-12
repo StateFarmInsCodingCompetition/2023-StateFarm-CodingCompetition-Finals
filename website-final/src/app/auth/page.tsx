@@ -2,9 +2,13 @@
 /* eslint-disable @next/next/no-img-element */
 import Button from "@/components/Button";
 import TextLabel from "@/components/TextLabel";
-import { apiFetch } from "@/utils/apiFetch";
+import { apiFetch, apiFetchJson } from "@/utils/apiFetch";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+    const router = useRouter();
+
+
     return (
         <main className="flex flex-row h-screen w-full justify-center" style={{
             backgroundImage: "url('/iStock-1203042832.jpg')"
@@ -18,14 +22,21 @@ export default function Home() {
                     const name = target.name.value;
                     const password = target.password.value;
 
-                    apiFetch(`/auth/login`, {
+                    apiFetchJson(`/auth/login`, {
+                        method: 'POST',
                         body: {
                             name, password
                         }
-                    })?.then((resp) => {
-                        console.log(resp)
+                    }).then((resp) => {
+                        if (resp.success == true) {
+                            localStorage.setItem('statefarm-session', resp.token);
+                            router.push('/dashboard')
+                        } else {
+                            alert(resp.reason)
+                        }
                     }).catch(e => {
                         alert('Something went wrong...')
+                        console.log(e)
                     })
 
 
@@ -36,6 +47,6 @@ export default function Home() {
                 </form>
             </div>
 
-        </main>
+        </main >
     )
 }

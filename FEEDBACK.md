@@ -1,8 +1,8 @@
 # Submission Details and Feedback
 
-## Team Name: <>
+## Team Name: Walden Tech
 
-* Team Member(s): <>, <>
+* Team Member(s): Matthew Walen
 
 ## List of Required Software
 
@@ -24,16 +24,7 @@
 
 ## How to Run
 
-> List any commands to run your project. For example:
-
-```sh
-# To get most NodeJS apps to run locally
-npm install
-
-npm start
-# OR
-npm run dev
-```
+Import your data using MongoDB compass into the respective databases using the JSON import feature:
 
 ## Known Issues or Bugs
 

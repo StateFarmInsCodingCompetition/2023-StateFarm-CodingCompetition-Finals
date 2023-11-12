@@ -1,5 +1,3 @@
-import { SVGProps } from 'react';
-
 export default function InputLabel({
   label,
   icon,

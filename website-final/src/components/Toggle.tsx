@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Switch } from '@headlessui/react';
-import classNames from '~/utils/classNames';
+import classNames from '@/utils/classNames';
 
 export default function Toggle({
   id,
@@ -9,8 +9,7 @@ export default function Toggle({
   description,
   className = '',
   value = false,
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  onChange = () => {},
+  onChange = () => { },
 }: {
   id?: string;
   titleClass?: string;
@@ -25,9 +24,8 @@ export default function Toggle({
   return (
     <Switch.Group
       as="div"
-      className={`flex ${
-        className.includes('justify-') ? '' : 'justify-between gap-2 items-center'
-      } ${className}`}
+      className={`flex ${className.includes('justify-') ? '' : 'justify-between gap-2 items-center'
+        } ${className}`}
     >
       <span className="flex flex-grow flex-col">
         <Switch.Label

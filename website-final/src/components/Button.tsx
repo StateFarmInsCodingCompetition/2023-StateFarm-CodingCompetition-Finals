@@ -1,9 +1,9 @@
 import { cva, cx, VariantProps } from 'class-variance-authority';
 import clsx from 'clsx';
 import Link from 'next/link';
-import { ComponentPropsWithRef, SVGProps } from 'react';
+import { ComponentPropsWithRef } from 'react';
 
-export type ButtonVariants = 'default'|'danger'|'light_danger'|'success'|'primary'|'blue'|'discrete'|'light_warning'|'warning'
+export type ButtonVariants = 'default' | 'danger' | 'light_danger' | 'success' | 'primary' | 'blue' | 'discrete' | 'light_warning' | 'warning'
 
 const styles = cva('transition-colors rounded-md', {
   variants: {

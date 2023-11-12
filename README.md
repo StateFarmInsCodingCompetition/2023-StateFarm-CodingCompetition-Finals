@@ -5,6 +5,7 @@
 ## Change Log:
 
 - November 12, 2023
+    - 7:55am - Publish PDF, include list of branches by team
     - 8:00am - Init and publish
 
 ## Getting Started
@@ -116,4 +117,3 @@ At the end of Round 2, we need you to fill out [FEEDBACK.md](./FEEDBACK.md). It 
 | IG          | Guhan Sivakumar, Ian Zhang                  | gs1803       | [PR-40](https://github.com/StateFarmInsCodingCompetition/2023-StateFarm-CodingCompetition/pull/40) |
 | Glo Gang    | Yash Sarkar                                 | yash-sf-2023 | [PR-18](https://github.com/StateFarmInsCodingCompetition/2023-StateFarm-CodingCompetition/pull/18) |
 | GCU_CS      | Kyungchan Im, Gabriel Teixeira Lima Aracena | ChristheIm   | [PR-39](https://github.com/StateFarmInsCodingCompetition/2023-StateFarm-CodingCompetition/pull/39) |
-                

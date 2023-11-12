@@ -33,7 +33,9 @@ export default function Home() {
         </thead>
         <tbody className="divide-y divide-gray-200">
           {claims?.map((disaster: any) => {
+            //@ts-expect-error
             const agent = agents?.find(agent => agent.id?.toString() == disaster?.agent_assigned_id?.toString());
+            //@ts-expect-error
             const claimHandler = claimHandlers?.find(handler => handler.id?.toString() == disaster?.claim_handler_assigned_id?.toString());
             return (
               <tr key={disaster._id}>

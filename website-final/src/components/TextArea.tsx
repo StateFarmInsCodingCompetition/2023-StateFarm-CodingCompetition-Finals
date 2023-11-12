@@ -8,8 +8,7 @@ export default function TextArea({
   required = true,
   className = '',
   defaultValue = '',
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  onBlur = () => {},
+  onBlur = () => { },
   rows = 1,
 }: {
   label?: string;
@@ -43,9 +42,8 @@ export default function TextArea({
           }}
           name={id}
           id={id}
-          className={`block w-full rounded-md border-gray-300 ${
-            icon && 'pl-10'
-          } focus:border-blue-500 focus:ring-blue-500 sm:text-sm ${className}`}
+          className={`block w-full rounded-md border-gray-300 ${icon && 'pl-10'
+            } focus:border-blue-500 focus:ring-blue-500 sm:text-sm ${className}`}
           placeholder={placeholder}
           required={required}
           defaultValue={defaultValue}

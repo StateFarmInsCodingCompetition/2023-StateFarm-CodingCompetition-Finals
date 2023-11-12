@@ -8,18 +8,17 @@
 
 > Examples: `NodeJS version X` or `Java version Y`
 
-<>, <>, <>
-<Python 3.11>, <pipenv>, <>
+<Python 3.11>, <pipenv>
 
 ## Document and describe any enhancements included to help the judges properly grade your submission.
 	
 ### Step 1:
 
-<>
+<Data Integration and Processing>
 
 ### Step 2: 
 
-<>
+<Data Analysis Report>
 
 ### etc.
 
@@ -33,7 +32,6 @@ path/to/your/directory
 
 pipenv shell
 pipenv install # will install all packages needed
-
 
 ## Known Issues or Bugs
 

@@ -447,7 +447,14 @@ class SimpleDataTool:
     # endregion
     
 # ------------------------------------ Nice to Have! ------------------------------------ #
-
+    # Helper function to get the region of a state
+    def get_region(self, state):
+        for region, states in self.REGION_MAP.items():
+            if state in states:
+                return region
+        return None  # or 'unknown'
+    
+    
     # This functions maps out each regional disaster by type and counts the number of each type
     def get_regional_disaster_map(self):\
         
@@ -462,16 +469,9 @@ class SimpleDataTool:
         'northeast': {}
         }
 
-        # Helper function to get the region of a given state
-        def get_region(state):
-            for region, states in self.REGION_MAP.items():
-                if state in states.split(','):
-                    return region
-            return None
-
         # Accumulate disaster types per region
         for disaster in disasters:
-            region = get_region(disaster['state'])
+            region = self.get_region(disaster['state'])
             if region:
                 disaster_type = disaster['type']
             if disaster_type in regional_disaster_map[region]:
@@ -495,13 +495,6 @@ class SimpleDataTool:
         # Initialize the result data structure
         regional_claims = {region: {} for region in self.REGION_MAP.keys()}
 
-        # Helper function to get the region of a state
-        def get_region(state):
-            for region, states in self.REGION_MAP.items():
-                if state in states:
-                    return region
-            return None  # or 'unknown'
-
         # Iterate through each claim, map to disaster, and update counts
         for claim in claims:
             # Map claim to disaster using disaster_id
@@ -510,7 +503,7 @@ class SimpleDataTool:
             # Ensure disaster exists
             if disaster:
                 state = disaster['state']
-                region = get_region(state)
+                region = self.get_region(state)
                 
                 # Ensure region is found and update the counts
                 if region is not None:

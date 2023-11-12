@@ -11,9 +11,7 @@ import * as cors from 'cors';
 async function main() {
     await dataSource.initialize();
 
-    api.use(cors({
-        origin: () => true
-    }));
+    api.use(cors());
     api.use(express.json());
 
     apiRouteRegister();

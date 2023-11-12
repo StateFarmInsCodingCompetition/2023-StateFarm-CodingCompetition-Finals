@@ -7,7 +7,7 @@ function getToken() {
 export function apiFetch(inputUrl: string, options: FetchOptions = {}) {
     if (typeof window === "undefined") return;
 
-    const apiUrl = process.env.VERCEL == '1' ? 'TOPUTIN' : 'http://localhost:5000'
+    const apiUrl = process.env.VERCEL == '1' ? 'https://statefarm-coding-competit-v79px.ondigitalocean.app/' : 'http://localhost:5000'
     const { headers, ...others } = options;
 
     const appliedHeaders = { ...options.headers };

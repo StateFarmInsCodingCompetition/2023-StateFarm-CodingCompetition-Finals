@@ -1,104 +1,62 @@
-# 2023 State Farm Coding Competition - Round 2
+# 2023 State Farm Coding Competition - Round 1 and 2
 
-**Please be sure to read this entire document *PRIOR* to starting Round 2.**
+This is the GitHub project for the 2023 State Farm Coding Competition Round 1 and 2. This will be the same project you'll use once Round 1 begins.
+
+
+**Please be sure to read this entire document *PRIOR* to moving into one of the language-specific folders.**
 
 ## Change Log:
 
-- November 12, 2023
-    - 8:00am - Init and publish
+- October 14, 2023 - Publishing problem sets
+    - [Problem Statement PDF](./round%201/ROUND_ONE_PROMPT.pdf)
+- October 6, 2023 - Publishing initial repo, including help guides and skeleton projects
+    - This is to just get you started -- making sure your computer is setup, that you are able to build and run the project (including unit tests), and getting familiar with the structure.
+    - The Problem Statement and relevant JSON files will be published at the start of Round 1
 
 ## Getting Started
 
-### Problem Statement
+### Selecting a Project Folder
 
-Round 1 was about reading JSON files, fetching and parsing through the mock disaster information, and passing unit tests. For Round 2, you'll be taking a more creative approach. We'd like to see you take your existing implementation and find ways to improve upon it.
+Based on the language you are the most comfortable using, pick one of the following folders to begin:
 
-These are some rough ideas to get the brain juices movin'. You do not necessarily have to follow these:
+- [`java` (Java)](./java/)
+- [`nodejs` (JavaScript)](./nodejs/)
+- [`python` (Python 3)](./python/)
 
-- Customer relationship management system with CRUD operations
-- Taking our geographical information and creating a Geographic Information System (GIS)
-- Expand the data schema by creating your own mock data and create relationships with the existing JSONs
+Inside each folder is the specific instructions for that language for:
 
-### Rules
+- What software you need to build and run the project
+- Commands for running unit tests
+- Considerations for that language
 
-- Contestants cannot seek help from individual outside their team
-- Contestants may use the Internet to do searches about code/framework functionality or install dependencies, but we **do not** want you to download existing applications and present them as your own. We want to see what type of features you can provide using your application alone.
-- Contestants must use the data provided in their solution.
-    - Contestants can make more records, add more columns, add additional new datasets, etc.
+### Use Visual Studio Code (VSCode)
 
-### When You Are Done
+We recommend using VSCode, our editor of choice. Several reasons are:
 
-- Update the `FEEDBACK.md` and include the following information:
-    - Team member name(s)
-    - Team name (your decision)
-    - Describe the features included to help the judges properly grade your submission, explain how to compile and run your submission, and document any bugs
+- Support for extensions that we'll recommend for each project to reduce time spent on environment setup and syntax issues
+- Great support and performance across multiple platforms
+- What we used to setup and test these projects
 
-### Presenting Your Submission
+More on using other editors below.
 
-During your presentation you'll be asked to provide the following information:
+### Git
 
-- Your team name
-- A short bio of each team member
-    - School name
-    - Graduation date
-    - Degree path
-- Any relevant personal links (LinkedIn, GitHub, portfolio site, etc.)
-- Profile picture(s)
-- Whatever other info you think is relevant
-- A presentation on your solution
-    - What problem(s) you're trying to solve
-    - What is your solution
-    - Demo / walkthrough features
-    - Conclusion tieing back to problems solved, lessons learned, future goals
-
-### How You Will Be Graded
-
-The finals competition is broken up into three grading sections:
-
-- Initial Online Competition -- 10 points
-- Presentations -- 10 points
-- Code Review -- 10 points
-    - Features and enhancements
-    - Creativity
-    - Scalability and simplicity
-    - Maintainability
-    - Adherence to language-specific best practices such as styling, coding conventions, etc.
+You will need to have [Git](https://git-scm.com/downloads) installed on your machine. It is supported on many platforms. For more on Git and VSCode, see [this guide](https://code.visualstudio.com/docs/sourcecontrol/overview). For other editors, you will need to search around the Internet.
 
 ## Considerations
 
-### Additional Ideas
+### Using Editors Other Than VSCode
 
-Alongside the above rules and requirements, you can also consider the following ideas:
+We primarily use and heavily recommend VSCode for this competition, especially if you run into any problems relating to software and your workstation. We cannot help with every issue that may arise, but by using VSCode, we can hopefully get to a quicker solution for certain edge cases (environment not setup correctly for example).
 
-- Making something visual is strongly recommended
-    - Will help for judging during your presentation
-- For UIs
-    - Material design
-    - Responsive design
-    - Accessibility
-    - Animations
-    - Your own branding
-- For backend processes
-    - Scalability and simplicity
-    - Performance and optimizations
-    - Uses of algorithms, data validation
-    - Authentication and authorization
+We also cannot guarantee that these projects will work with other editors. Your mileage may vary.
+### Plan to Carry This Project into Round 2
 
-### Scope
+Plan accordingly to use this project for round 2 of the competition. You'll want to make sure your code is reusable and easy to understand, tweak, and maintain. Otherwise, you may have a difficult time with the round 2 problem set.
 
-You'll want to be realistic with your time. Some guidelines:
+### Dealing with new line characters
 
-- Don't make everything as polished as possible, however, try to get the core concepts of your enhancements completed.
-- Don't worry about unit tests. Delete them if they're a hinderance or enhance them if time allows.
-- Application can run locally and doesn't need to be hosted.
-- Try to limit bugs, however, we understand that with the limited timeframe, they will occur.
-    - Be sure to document any known bugs in your `FEEDBACK.md`.
-
-### Resuming from Your Round 1 Submission
-
-Round 2 will be based off of your Round 1 submission. You'll want to make sure it still runs and that you update any dependencies as needed.
-
-You can ignore passing unit tests. You can remove them if they hinder you.
+https://help.github.com/articles/dealing-with-line-endings/
 
 ## Questions?
 
@@ -106,4 +64,4 @@ E-mail [codingcompetition@statefarm.com](mailto:codingcompetition@statefarm.com)
 
 ## Feedback
 
-At the end of Round 2, we need you to fill out [FEEDBACK.md](./FEEDBACK.md). It includes a few questions such as team name, any notable characteristics, bugs, etc. 
+At the ends of Round 1 and 2, we need you to fill out [FEEDBACK.md](./FEEDBACK.md). It includes a few questions such as team name, number of unit tests passed, any notable characteristics. Please 

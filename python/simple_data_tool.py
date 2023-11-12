@@ -514,3 +514,20 @@ class SimpleDataTool:
         
         # Return the resulting data structure
         return regional_claims
+    
+    # This functions maps out each regional agents
+    def get_total_agents_per_region(self):
+        # Assign dataset to variable
+        agents = self.get_agent_data()
+        regional_agents = {"West": [], "Midwest": [], "South": [], "Northeast": []}
+        
+        for agent in agents:
+            for region in regional_agents:
+                if agent['region'] == region:
+                    regional_agents[region].append(agent)
+                    break  # Break out of the inner loop once the correct region is found
+        
+        return regional_agents
+
+
+
